@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="title">Space Invaders!</div>
+    <div id="subhead">Planet Earth is endangered. It is on you to save the world!</div>
+    <div id="lives">Lives: <span id="playerLives">3</span></div>
+    <div id="score">Score: <span id="playerScore">0</span></div>
+    <div id="highScore">High Score: <span id="highScoreValue">0</span></div>
+    <div id="level">Level: <span id="currentLevel">1</span></div>
+    <button id="startButton">Start Fight</button>
+    <canvas id="gameCanvas" width="800" height="600" style="display: none;"></canvas>
+    <button id="restartButton" style="display: none;">Try Again</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    text-align: center;
+    overflow: hidden; /* prevent text going out of screen */
+}
+
+canvas {
+    border: 5px solid #000;
+    background-image: url('images/background.png');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#subhead {
+    font-size: 18px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #000;
+    animation: typing 6s steps(59, end);
+    display: inline-block; /* Display as inline block to prevent going off screen */
+    max-width: 80%;
+    text-align: left;
+}
+
+#startButton,
+#restartButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+#lives,
+#playerLives {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+}
+
+#score,
+#playerScore {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+}
+
+#highScore {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: blueviolet;
+}
+
+#level {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    color: green;
+}
